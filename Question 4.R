@@ -37,7 +37,7 @@ ts.plot(USATS, CanadaTS,
 )
 
 legend('topleft',
-       legend = c("USATS","CanadaTS"),
+       legend = c("USA","Canada"),
        col = c("blue","red"),
        lwd = 1,
        lty = 1,
