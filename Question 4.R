@@ -35,3 +35,11 @@ ts.plot(USATS, CanadaTS,
         col = c("blue", "red"),
         lty = c(1)
 )
+
+legend('topleft',
+       legend = c("USATS","CanadaTS"),
+       col = c("blue","red"),
+       lwd = 1,
+       lty = 1,
+       bty = "n",
+       cex = 0.7)
