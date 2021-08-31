@@ -4,6 +4,9 @@ setwd("c:/users/sxf190018/documents/buan6359/assignment")
 #clear environment
 rm(list = ls())
 
+#include this liibrary
+library("dplyr")
+
 #fetch the data into variable
 olympics <- readRDS("OlympicsMedal.rds")
 
