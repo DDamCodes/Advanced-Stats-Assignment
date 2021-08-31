@@ -4,7 +4,7 @@ setwd("c:/users/sxf190018/documents/buan6359/assignment")
 #clear environment
 rm(list = ls())
 
-#include this liibrary
+#include this library
 library("dplyr")
 
 #fetch the data into variable
