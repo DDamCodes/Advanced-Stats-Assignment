@@ -4,6 +4,9 @@ setwd("c:/users/sxf190018/documents/buan6359/assignment")
 #clear previous environment variables.
 rm(list = ls())
 
+#include this library
+library("dplyr")
+
 #read the data into variable.
 GSS2014 <- readRDS("GSS2014.rds")
 
