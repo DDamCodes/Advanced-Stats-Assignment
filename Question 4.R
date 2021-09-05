@@ -1,5 +1,5 @@
 #change the directory to where the data resides.
-setwd("c:/users/sxf190018/documents/buan6359/assignment")
+# setwd("c:/users/sxf190018/documents/buan6359/assignment")
 
 #clear environment
 rm(list = ls())
@@ -18,24 +18,25 @@ EndYear <- tail(sort(olympics$Year), 1)
 
 #time series graph for USA.
 USATS <- ts(olympics$`United States`,
-            start = StartYear,
-            end = EndYear,
-            frequency = 1
+            start = c(1924),
+            end = c(2014),
+            frequency = 0
 )
 
 #time series graph for Canada.
-CanadaTS <- ts(olympics$Canada,
-               start = StartYear,
-               end = EndYear,
-               frequency = 1
-)
+# CanadaTS <- ts(olympics$Canada,
+#                start = c(1924, 1),
+#                end = c(2014, 12),
+#                frequency = 1
+# )
 
 #plot both ts into single graph.
-ts.plot(USATS, CanadaTS,
+ts.plot(USATS,
         main = "Time Series Graph: Olympic Medal",
         ylab = "No of medals obtained",
         xlab = "Year",
         col = c("blue", "red"),
+        type="l",
         lty = c(1)
 )
 
