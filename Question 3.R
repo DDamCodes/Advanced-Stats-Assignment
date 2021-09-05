@@ -21,7 +21,7 @@ hist(GSS2014sub$EDUC,
      breaks = 10,
      freq = T,
      main = "Histogram of Ameriacan adult's Education in 2014",
-     xlab = "Educaation in years",
+     xlab = "Education in Years",
      ylab = "Frequency",
      labels = T, #label the values
      xlim = c(EDUCLow, EDUCHigh),
